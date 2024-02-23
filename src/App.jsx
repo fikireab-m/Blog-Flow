@@ -1,4 +1,4 @@
-import Counter from "./features/counter/Counter";
+import Counter from "./Counter";
 
 function App() {
   return (
