@@ -5,9 +5,11 @@ import PostTile from "./components/PostTile";
 const PostsList = () => {
   const posts = useSelector(selectAllPosts);
 
-  const renderedPosts = posts.map((post) => (
-    <PostTile key={post.id} post={post} />
-  ));
+  const orderedPosts = posts
+    .slice()
+    .sort((a, b) => b.date.localeCompare(a.date));
+
+  const renderedPosts = orderedPosts.map((post) => <PostTile post={post} key={post.id}/>);
 
   return (
     <section>
