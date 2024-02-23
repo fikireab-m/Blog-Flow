@@ -5,7 +5,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 90vh;
   font-size: 5rem;
   display: grid;
   place-content: center;
@@ -14,7 +14,8 @@ body {
 input,
 button {
   font: inherit;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
 }
 
 section {
@@ -26,7 +27,7 @@ section {
 
 input {
   text-align: center;
-  max-width: 2.5em;
+  max-width: 4em;
 }
 
 button {
