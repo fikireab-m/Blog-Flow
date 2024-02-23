@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
-import { selectAllPosts } from "./features/posts/postsSlice";
-import PostTile from "./components/PostTile";
+import { selectAllPosts } from "../features/posts/postsSlice";
+import PostTile from "../components/PostTile";
 
 const PostsList = () => {
   const posts = useSelector(selectAllPosts);
