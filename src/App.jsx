@@ -1,5 +1,5 @@
 import PostsList from "./pages/PostsList";
-import AddPostForm from "./components/AddPostForm";
+import AddPostForm from "./pages/AddPostForm";
 
 function App() {
   return (

@@ -57,8 +57,7 @@ const postsSlice = createSlice({
     },
     extraReducers(builder) {
         builder
-            // eslint-disable-next-line no-unused-vars
-            .addCase(fetchPosts.pending, (state, _action) => {
+            .addCase(fetchPosts.pending, (state) => {
                 state.status = 'loading'
             })
             .addCase(fetchPosts.fulfilled, (state, action) => {
